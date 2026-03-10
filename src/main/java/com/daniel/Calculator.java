@@ -59,7 +59,7 @@ public class Calculator extends JFrame {
                             case "x" -> number1 * number2;
                             case "/" -> {
                                 if (number2 == 0) {
-                                    throw new ArithmeticException("Can't divide by zero");
+                                    throw new ArithmeticException("divide by zero");
                                 }
                                 yield number1 / number2;
                             }
@@ -100,7 +100,7 @@ public class Calculator extends JFrame {
         display = new JTextField();
         display.setEditable(false); // prevents the user from typing with keyboard
         display.setHorizontalAlignment(JTextField.RIGHT);
-        display.setFont(new Font("Arial", Font.PLAIN, 100));
+        display.setFont(new Font("Arial", Font.PLAIN, 80));
         display.setVisible(true);
 
         mainPanel = new JPanel();
